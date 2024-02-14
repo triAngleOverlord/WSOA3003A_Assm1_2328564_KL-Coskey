@@ -37,7 +37,7 @@ public class itemWeight : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other != null && other.transform.tag== "container")
+        if (other != null && other.transform.tag== "triggerBox")
         {
             if (isImperial == true)
             {
