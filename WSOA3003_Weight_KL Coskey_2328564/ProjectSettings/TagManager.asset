@@ -6,6 +6,7 @@ TagManager:
   tags:
   - container
   - triggerBox
+  - destroyBox
   layers:
   - Default
   - TransparentFX

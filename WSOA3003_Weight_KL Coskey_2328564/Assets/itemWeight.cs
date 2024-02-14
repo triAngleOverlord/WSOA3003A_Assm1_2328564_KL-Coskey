@@ -51,6 +51,11 @@ public class itemWeight : MonoBehaviour
             }
             other.transform.GetComponent<scaleCont>().calculate();
         }
+
+        else if (other != null && other.transform.tag == "destroyBox")
+        {
+            Destroy(gameObject);
+        }
                 
 
         
