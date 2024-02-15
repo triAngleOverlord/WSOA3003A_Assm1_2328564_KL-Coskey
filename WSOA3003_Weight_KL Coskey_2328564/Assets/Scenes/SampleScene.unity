@@ -198,7 +198,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25308895}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -693,7 +693,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350632225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1210,8 +1210,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.2138848, z: 1}
+  m_Center: {x: 0, y: 0.106942415, z: 0}
 --- !u!23 &638815294
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2388,8 +2388,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.3033872, z: 1}
+  m_Center: {x: 0, y: 0.15169358, z: 0}
 --- !u!23 &998558201
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2673,8 +2673,8 @@ Transform:
   m_GameObject: {fileID: 1286322280}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.30072546, y: 0.24, z: 0.53}
-  m_LocalScale: {x: 12.836188, y: 3.6682818, z: 1}
+  m_LocalPosition: {x: -0.3007255, y: 0.24, z: 0.53}
+  m_LocalScale: {x: 12.836188, y: 3.7393274, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 267474141}
@@ -3602,6 +3602,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 963484860416582098, guid: 61da6454cc9843d4a8fc8136d596ff35, type: 3}
+      propertyPath: isImperial
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4386824605941173998, guid: 61da6454cc9843d4a8fc8136d596ff35, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.9
@@ -3640,10 +3644,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4386824605941173998, guid: 61da6454cc9843d4a8fc8136d596ff35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8165849463663188276, guid: 61da6454cc9843d4a8fc8136d596ff35, type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8953752528145692129, guid: 61da6454cc9843d4a8fc8136d596ff35, type: 3}

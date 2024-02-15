@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   weightAmount: 0
-  isImperial: 0
+  isImperial: 1
 --- !u!54 &6145917124306432107
 Rigidbody:
   m_ObjectHideFlags: 0

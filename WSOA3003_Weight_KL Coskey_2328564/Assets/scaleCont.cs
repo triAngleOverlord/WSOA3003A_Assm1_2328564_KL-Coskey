@@ -35,6 +35,7 @@ public class scaleCont : MonoBehaviour
             Debug.Log("Even");
             scaleAnim.SetInteger("difference", 0);
         }
+        Debug.Log(metricTotal + ":" + imperialTotal);
     }
 
 
