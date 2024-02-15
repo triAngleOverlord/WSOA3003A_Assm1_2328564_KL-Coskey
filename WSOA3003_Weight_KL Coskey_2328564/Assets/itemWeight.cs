@@ -42,11 +42,13 @@ public class itemWeight : MonoBehaviour
             if (isImperial == true)
             {
                 other.transform.GetComponent<scaleCont>().imperialTotal += weightAmount;
+                transform.SetParent(GameObject.Find("imperialContainer").gameObject.transform);
                 //Debug.Log("Added imperial weight " + weightAmount);
             }
             else
             {
                 other.transform.GetComponent<scaleCont>().metricTotal += weightAmount;
+                transform.SetParent(GameObject.Find("metricContainer").gameObject.transform);
                 //Debug.Log("Added metric weight " + weightAmount);
             }
             other.transform.GetComponent<scaleCont>().calculate();

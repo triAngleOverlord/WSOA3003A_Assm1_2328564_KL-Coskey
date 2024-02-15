@@ -16,15 +16,15 @@ public class scaleCont : MonoBehaviour
     public void calculate()
     {
         int difference = imperialTotal - metricTotal;
-        Debug.Log(difference);
+        //Debug.Log(difference);
         if (difference > 0)
         {
-            Debug.Log("More Imperial");
+            //Debug.Log("More Imperial");
             scaleAnim.SetInteger("difference", 1);
         }
         else if (difference < 0)
         {
-            Debug.Log("More Metric");
+            //Debug.Log("More Metric");
             scaleAnim.SetInteger("difference", 2);
 
         }
@@ -32,7 +32,7 @@ public class scaleCont : MonoBehaviour
         //Anim...
         else
         {
-            Debug.Log("Even");
+            //Debug.Log("Even");
             scaleAnim.SetInteger("difference", 0);
         }
         Debug.Log(metricTotal + ":" + imperialTotal);
