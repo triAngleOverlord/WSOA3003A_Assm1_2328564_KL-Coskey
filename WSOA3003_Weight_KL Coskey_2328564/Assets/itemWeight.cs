@@ -18,13 +18,13 @@ public class itemWeight : MonoBehaviour
     {
         switch(type)
         {
-            case objectType.wheat:  weightAmount = 500; isImperial = true;
+            case objectType.wheat:  weightAmount = 500; isImperial = false;
                 break;
-            case objectType.chicken: weightAmount = 60; isImperial = false;
+            case objectType.chicken: weightAmount = 60; isImperial = true;
                 break;
-            case objectType.rice: weightAmount = 100; isImperial = true;
+            case objectType.rice: weightAmount = 100; isImperial = false;
                 break;
-            case objectType.peas: weightAmount = 4; isImperial = false;
+            case objectType.peas: weightAmount = 5; isImperial = true;
                 break;
         }
     }
@@ -54,6 +54,20 @@ public class itemWeight : MonoBehaviour
 
         else if (other != null && other.transform.tag == "destroyBox")
         {
+            if (isImperial == true)
+            {
+
+                GameObject.Find("triggerBox").transform.GetComponent<scaleCont>().imperialTotal -= weightAmount;
+
+                Debug.Log("Minus imperial weight " + weightAmount);
+            }
+            else if (isImperial == false)
+            {
+
+                GameObject.Find("triggerBox").transform.GetComponent<scaleCont>().metricTotal -= weightAmount;
+                Debug.Log("Minus imperial weight " + weightAmount);
+            }
+            GameObject.Find("triggerBox").transform.GetComponent<scaleCont>().calculate();
             Destroy(gameObject);
         }
                 
@@ -61,18 +75,4 @@ public class itemWeight : MonoBehaviour
         
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (isImperial == true)
-        {
-            other.transform.GetComponent<scaleCont>().imperialTotal -= weightAmount;
-            Debug.Log("Minus imperial weight " + weightAmount);
-        }
-        else
-        {
-            other.transform.GetComponent<scaleCont>().metricTotal -= weightAmount;
-            Debug.Log("Minus metric weight " + weightAmount);
-        }
-        other.transform.GetComponent<scaleCont>().calculate();
-    }
 }

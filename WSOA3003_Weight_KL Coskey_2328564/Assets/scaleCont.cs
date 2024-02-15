@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class scaleCont : MonoBehaviour
 {
-    //[SerializeField] private GameObject scalar;
+    [SerializeField] private Animator scaleAnim;
     public int imperialTotal;
     public int metricTotal;
     // Start is called before the first frame update
@@ -22,9 +22,11 @@ public class scaleCont : MonoBehaviour
             Debug.Log("More Imperial");
             //Anim...
         }
-        else
+        else if (difference < 0)
             Debug.Log("More Metric");
         //Anim...
+        else
+            Debug.Log("Even");
     }
 
 
