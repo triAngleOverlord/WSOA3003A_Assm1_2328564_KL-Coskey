@@ -20,13 +20,21 @@ public class scaleCont : MonoBehaviour
         if (difference > 0)
         {
             Debug.Log("More Imperial");
-            //Anim...
+            scaleAnim.SetInteger("difference", 1);
         }
         else if (difference < 0)
+        {
             Debug.Log("More Metric");
+            scaleAnim.SetInteger("difference", 2);
+
+        }
+            
         //Anim...
         else
+        {
             Debug.Log("Even");
+            scaleAnim.SetInteger("difference", 0);
+        }
     }
 
 

@@ -32,9 +32,14 @@ public class buttons : MonoBehaviour
 
     public void removeAnItem() 
     {
-        allOfTheseItems[0].transform.GetComponent<SphereCollider>().isTrigger = true;
-        Debug.Log(allOfTheseItems[0].transform.GetComponent<SphereCollider>().isTrigger);
-        allOfTheseItems.Remove(allOfTheseItems[0]);
+        if (allOfTheseItems.Count != 0)
+        {
+            allOfTheseItems[0].transform.GetComponent<SphereCollider>().isTrigger = true;
+            Debug.Log(allOfTheseItems[0].transform.GetComponent<SphereCollider>().isTrigger);
+            allOfTheseItems.Remove(allOfTheseItems[0]);
+        }
+        else
+            Debug.Log("No more of these items to remove");
     }
 
 }
