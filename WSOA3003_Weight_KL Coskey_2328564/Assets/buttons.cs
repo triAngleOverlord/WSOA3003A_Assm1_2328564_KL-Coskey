@@ -27,21 +27,21 @@ public class buttons : MonoBehaviour
         allImperialItems = GameObject.Find("collection").gameObject.transform;
         switch (item)
         {
-            case Item.peaIMP: thisItem = Resources.Load<GameObject>("ItemsIMP/peaItem");
+            case Item.peaIMP: thisItem = Resources.Load<GameObject>("ItemsIMP/peaIMP");
                 break;
-            case Item.appleIMP:
+            case Item.appleIMP: thisItem = Resources.Load<GameObject>("ItemsIMP/appleIMP");
                 break;
-            case Item.cabbageIMP:
+            case Item.cabbageIMP: thisItem = Resources.Load<GameObject>("ItemsIMP/cabbageIMP");
                 break;
-            case Item.chickenIMP: thisItem= Resources.Load<GameObject>("ItemsIMP/chickenItem"); 
+            case Item.chickenIMP: thisItem= Resources.Load<GameObject>("ItemsIMP/chickenIMP"); 
                 break;
-            case Item.flourIMP:
+            case Item.flourIMP: thisItem = Resources.Load<GameObject>("ItemsIMP/flourIMP");
                 break;
-            case Item.brainIMP: 
+            case Item.brainIMP: thisItem = Resources.Load<GameObject>("ItemsIMP/braincellIMP");
                 break;
-            case Item.crownIMP:
-              break;
-            case Item.soulIMP: 
+            case Item.crownIMP: thisItem = Resources.Load<GameObject>("ItemsIMP/crownIMP");
+                break;
+            case Item.soulIMP: thisItem = Resources.Load<GameObject>("ItemsIMP/soulIMP");
                 break;
             
         }

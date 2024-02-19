@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
 
             switch (order)
             {
-                case orderNumber.One: order = orderNumber.Two; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/riceMET")); itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/riceMET"));
+                case orderNumber.One: order = orderNumber.Two; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/donkey")); itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/appleMET"));
                     break;
                 case orderNumber.Two: order = orderNumber.Three;
                     break;

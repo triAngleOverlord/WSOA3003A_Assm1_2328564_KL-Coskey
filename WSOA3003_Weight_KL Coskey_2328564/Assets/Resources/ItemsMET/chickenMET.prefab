@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5232346142497402468
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.23
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.23
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.23
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -82.69802
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.65524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 46.65745
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.35722712
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9340176
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -138.14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_Name
+      value: chickenMET
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_TagString
+      value: item
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824863369544968301, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3600757342504053721}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3351353887601786195}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3532806948209931113}
+  m_SourcePrefab: {fileID: 100100000, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+--- !u!1 &4925933905384330037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
+  m_PrefabInstance: {fileID: 5232346142497402468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &3600757342504053721
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4925933905384330037}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &3351353887601786195
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4925933905384330037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.8
+  m_Center: {x: -0.02, y: 2.31, z: 0}
+--- !u!114 &3532806948209931113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4925933905384330037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e2a7fd2526b8349942e91612f62bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 8
+  weightAmount: 0
+  isImperial: 0

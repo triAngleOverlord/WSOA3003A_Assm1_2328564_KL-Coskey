@@ -27,12 +27,49 @@ public class itemWeight : MonoBehaviour
     {
         switch(type)
         {
-            case objectType.flourMET:  weightAmount = 500; isImperial = false;
+            case objectType.peaMET: weightAmount = 5; isImperial = false;
                 break;
-            case objectType.chickenMET: weightAmount = 60; isImperial = true;
+            case objectType.peaIMP: weightAmount = 5; isImperial = true;
                 break;
-            case objectType.peaMET: weightAmount = 5; isImperial = true;
+
+            case objectType.appleMET: weightAmount = 5; isImperial = false;
                 break;
+            case objectType.appleIMP: weightAmount = 5; isImperial= true;
+                break;
+
+                case objectType.cabbageMET: weightAmount = 5; isImperial = false;
+                break;
+            case objectType.cabbageIMP: weightAmount = 5; isImperial = true;
+                break;
+
+            case objectType.flourMET: weightAmount = 5; isImperial = false;
+                break;
+            case objectType.flourIMP:  weightAmount = 500; isImperial = true;
+                break;
+
+            case objectType.chickenMET: weightAmount = 60; isImperial = false;
+                break;
+            case objectType.chickenIMP: weightAmount = 60; isImperial = true;
+                break;
+
+            case objectType.brainMET: weightAmount = 60; isImperial = false;
+                break;
+            case objectType.brainIMP: weightAmount = 60; isImperial = true;
+                break;
+
+            case objectType.crownMET: weightAmount = 60; isImperial = false;
+                break;
+            case objectType.crownIMP: weightAmount = 60; isImperial = true;
+                break;
+
+            case objectType.soulMET: weightAmount = 60; isImperial = false;
+                break;
+            case objectType.soulIMP: weightAmount = 60; isImperial = true;
+                break;
+
+            case objectType. donkey: weightAmount = 60; isImperial = false;
+                break;
+
         }
     }
 
