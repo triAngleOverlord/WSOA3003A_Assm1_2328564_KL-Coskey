@@ -12,7 +12,14 @@ public class buttons : MonoBehaviour
     public TextMeshProUGUI itemInfo;
     public enum Item
     {
-        chicken, pea
+        peaIMP,
+        appleIMP,
+        cabbageIMP,
+        chickenIMP, 
+        flourIMP,
+        brainIMP,
+        crownIMP,
+        soulIMP
     }
 
     public void Start()
@@ -20,10 +27,23 @@ public class buttons : MonoBehaviour
         allImperialItems = GameObject.Find("collection").gameObject.transform;
         switch (item)
         {
-            case Item.chicken: thisItem= Resources.Load<GameObject>("ItemsIMP/chickenItem"); 
+            case Item.peaIMP: thisItem = Resources.Load<GameObject>("ItemsIMP/peaItem");
                 break;
-            case Item.pea: thisItem = Resources.Load<GameObject>("ItemsIMP/peaItem");
+            case Item.appleIMP:
                 break;
+            case Item.cabbageIMP:
+                break;
+            case Item.chickenIMP: thisItem= Resources.Load<GameObject>("ItemsIMP/chickenItem"); 
+                break;
+            case Item.flourIMP:
+                break;
+            case Item.brainIMP: 
+                break;
+            case Item.crownIMP:
+              break;
+            case Item.soulIMP: 
+                break;
+            
         }
     }
     public void addAnItem()

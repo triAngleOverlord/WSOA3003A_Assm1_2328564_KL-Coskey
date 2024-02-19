@@ -12,28 +12,30 @@ public class itemWeight : MonoBehaviour
 
     private enum objectType
     {
-        wheat, chicken, rice, peas
+        peaMET, peaIMP,
+        appleMET, appleIMP,
+        cabbageMET, cabbageIMP,
+        flourMET, flourIMP, 
+        chickenMET, chickenIMP, 
+        brainMET, brainIMP,
+        crownMET, crownIMP,
+        soulMET, soulIMP,
+        donkey
+        
     }
     void Start()
     {
         switch(type)
         {
-            case objectType.wheat:  weightAmount = 500; isImperial = false;
+            case objectType.flourMET:  weightAmount = 500; isImperial = false;
                 break;
-            case objectType.chicken: weightAmount = 60; isImperial = true;
+            case objectType.chickenMET: weightAmount = 60; isImperial = true;
                 break;
-            case objectType.rice: weightAmount = 100; isImperial = false;
-                break;
-            case objectType.peas: weightAmount = 5; isImperial = true;
+            case objectType.peaMET: weightAmount = 5; isImperial = true;
                 break;
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
