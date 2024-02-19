@@ -20,9 +20,9 @@ public class buttons : MonoBehaviour
         allImperialItems = GameObject.Find("collection").gameObject.transform;
         switch (item)
         {
-            case Item.chicken: thisItem= Resources.Load<GameObject>("Items/chickenItem"); Debug.Log("pea found");
+            case Item.chicken: thisItem= Resources.Load<GameObject>("ItemsIMP/chickenItem"); 
                 break;
-            case Item.pea: thisItem = Resources.Load<GameObject>("Items/peaItem");
+            case Item.pea: thisItem = Resources.Load<GameObject>("ItemsIMP/peaItem");
                 break;
         }
     }

@@ -15,21 +15,19 @@ public class scaleCont : MonoBehaviour
 
     public void calculate()
     {
-        int difference = imperialTotal - metricTotal;
+        GameManager.difference= imperialTotal - metricTotal;
         //Debug.Log(difference);
-        if (difference > 0)
+        if (GameManager.difference > 0)
         {
             //Debug.Log("More Imperial");
             scaleAnim.SetInteger("difference", 1);
         }
-        else if (difference < 0)
+        else if (GameManager.difference < 0)
         {
             //Debug.Log("More Metric");
             scaleAnim.SetInteger("difference", 2);
 
         }
-            
-        //Anim...
         else
         {
             //Debug.Log("Even");
