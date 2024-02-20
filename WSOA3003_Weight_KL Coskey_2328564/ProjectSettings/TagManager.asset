@@ -8,6 +8,7 @@ TagManager:
   - triggerBox
   - destroyBox
   - item
+  - buttons
   layers:
   - Default
   - TransparentFX

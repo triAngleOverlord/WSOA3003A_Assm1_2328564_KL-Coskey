@@ -16,7 +16,7 @@ public class scaleCont : MonoBehaviour
     public void calculate()
     {
         GameManager.difference= imperialTotal - metricTotal;
-        //Debug.Log(difference);
+        //Debug.Log(GameManager.difference);
         if (GameManager.difference > 0)
         {
             //Debug.Log("More Imperial");

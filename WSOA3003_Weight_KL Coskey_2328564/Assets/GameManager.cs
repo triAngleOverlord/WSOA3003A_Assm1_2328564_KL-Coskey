@@ -6,14 +6,16 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public orderNumber order;
     public static int difference;
-    private List<GameObject> itemsToTrade = new List<GameObject>();
+    public List<GameObject> itemsToTrade = new List<GameObject>();
     public enum orderNumber
     {
-        One, Two, Three, Four, Five, Six, Seven, Eight
+        One, Two, Three, Four, Five, Six, Seven
     }
     void Start()
     {
         order = orderNumber.One;
+        itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/flourMET"));
+        instantiateItemsToList();
     }
 
     // Update is called once per frame
@@ -32,7 +34,14 @@ public class GameManager : MonoBehaviour
             GameObject[] items = GameObject.FindGameObjectsWithTag("item");
             foreach (GameObject item in items)
             {
-                Destroy(item);
+                item.transform.GetComponent<SphereCollider>().isTrigger = true;
+            }
+
+            GameObject[] allButtons = GameObject.FindGameObjectsWithTag("buttons");
+            foreach (GameObject button in allButtons)
+            {
+                button.GetComponent<buttons>().allOfTheseItems.Clear();
+                button.GetComponent<buttons>().itemInfo.text = new string(button.name);
             }
 
             itemsToTrade.Clear();
@@ -40,21 +49,19 @@ public class GameManager : MonoBehaviour
 
             switch (order)
             {
-                case orderNumber.One: order = orderNumber.Two; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/donkey")); itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/appleMET"));
+                case orderNumber.One: order = orderNumber.Two; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/chickenMET"));
                     break;
-                case orderNumber.Two: order = orderNumber.Three;
+                case orderNumber.Two: order = orderNumber.Three; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/chickenMET")); itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/flourMET"));
                     break;
-                case orderNumber.Three: order = orderNumber.Four;
+                case orderNumber.Three: order = orderNumber.Four; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/braincellMET")); itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/braincellMET"));
                     break;
-                case orderNumber.Four: order = orderNumber.Five;
+                case orderNumber.Four: order = orderNumber.Five; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/soulMET"));
                     break;
-                case orderNumber.Five: order = orderNumber.Six;
+                case orderNumber.Five: order = orderNumber.Six; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/crownMET"));
                     break;
-                case orderNumber.Six: order = orderNumber.Seven;
+                case orderNumber.Six: order = orderNumber.Seven; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/braincellMET"));
                     break;
-                case orderNumber.Seven: order = orderNumber.Eight;
-                    break;
-                case orderNumber.Eight:
+                case orderNumber.Seven: itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/donkey"));
                     break;
 
             }
@@ -70,7 +77,7 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0; i < itemsToTrade.Count; i++)
         {
-            Instantiate(itemsToTrade[i], GameObject.Find("spawnTrade").gameObject.transform, true);
+            Instantiate(itemsToTrade[i], GameObject.Find("spawnTrade").gameObject.transform.position, Quaternion.identity, GameObject.Find("spawnTrade").gameObject.transform);
         }
     }
 }

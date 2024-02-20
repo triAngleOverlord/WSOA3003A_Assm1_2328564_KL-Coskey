@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 31.078417
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e5548051a07cba408cff2ac05efce27, type: 3}
       propertyPath: m_LocalRotation.w
@@ -155,6 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e2a7fd2526b8349942e91612f62bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 8
+  type: 9
   weightAmount: 0
   isImperial: 1
