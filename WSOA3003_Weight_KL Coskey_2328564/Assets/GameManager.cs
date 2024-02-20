@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,12 +9,15 @@ public class GameManager : MonoBehaviour
     public static int difference;
     public List<GameObject> itemsToTrade = new List<GameObject>();
     public GameObject[] allButtons;
+    [SerializeField] GameObject win;
+    [SerializeField] GameObject endPanel;
     public enum orderNumber
     {
         One, Two, Three, Four, Five, Six, Seven
     }
     void Start()
     {
+        endPanel.SetActive(false);
         allButtons = GameObject.FindGameObjectsWithTag("buttons");
         foreach (GameObject button in allButtons)
         {
@@ -71,11 +75,12 @@ public class GameManager : MonoBehaviour
                     break;
                 case orderNumber.Six: order = orderNumber.Seven; itemsToTrade.Add(Resources.Load<GameObject>("ItemsMET/donkey")); allButtons[5].gameObject.SetActive(true);
                     break;
-                case orderNumber.Seven: Debug.Log("Done");
+                case orderNumber.Seven: endPanel.SetActive(true);
                     break;
 
             }
             instantiateItemsToList();
+            StartCoroutine(winEffect());
         }
 
         else
@@ -89,5 +94,12 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(itemsToTrade[i], GameObject.Find("spawnTrade").gameObject.transform.position, Quaternion.identity, GameObject.Find("spawnTrade").gameObject.transform);
         }
+    }
+
+    private IEnumerator winEffect()
+    {
+        GameObject clone=Instantiate(win);
+        yield return new WaitForSecondsRealtime(2);
+        Destroy(clone);
     }
 }
